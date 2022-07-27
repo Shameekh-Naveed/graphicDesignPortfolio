@@ -1,0 +1,47 @@
+.home-main {
+  position: relative;
+  margin-top: 2em;
+}
+.bg-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 100%;
+}
+.socials {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+}
+.socials ul li {
+  display: inline;
+  list-style: none;
+  padding: 1em;
+  margin: 1em;
+}
+.socials h3 {
+  margin: 0.5em;
+  text-align: center;
+  color: #ffdb41;
+  font-size: 3em;
+}
+.home-main h2 {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  font-size: 48px;
+  color: #333333;
+}
+.lg {
+  font-size: 60px;
+}
+.sp {
+  color: black;
+}
+button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

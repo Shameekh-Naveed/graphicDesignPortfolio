@@ -1,0 +1,58 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* align-items: center; */
+  justify-items: center;
+  justify-content: space-around;
+  /* margin: 0, 1em, 1em, 1em; */
+  padding: 1em;
+  /* color: #ffdb41; */
+}
+.nav-item {
+  display: inline;
+  list-style: none;
+  justify-self: center;
+  font-size: 18px;
+  /* color: #ffdb41; */
+}
+
+.signature {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  height: 70px;
+  width: 100px;
+
+  /* margin: 0;
+    padding: 0;
+    justify-self: left;
+    align-self: start; */
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffdb41;
+  border-bottom: 2px solid #ffdb41;
+  border-top: 2px solid #ffdb41;
+  padding: 7px;
+}
+.nav-link:hover {
+  /* background-color:grey; */
+  animation-name: nav-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  /* animation-delay: -2s; */
+}
+
+/* Animations */
+@keyframes nav-hover {
+    from {
+      background-color: #333333;
+      color: #ffdb41;
+      /* opacity: 0; */
+    }
+    to {
+      background-color: black;
+      color: #ffffff;
+      /* opacity: 0.3; */
+    }
+  }

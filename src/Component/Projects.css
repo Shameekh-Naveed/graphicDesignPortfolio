@@ -1,0 +1,75 @@
+#entire{
+    margin-top: 3em;
+}
+.proj-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: auto; */
+  /* align-items: center; */
+  justify-items: center;
+  /* justify-content: end; */
+  grid-row-gap: 1px;
+  grid-column-gap: 0px;
+  align-items: center;
+  /* border: 4px solid red; */
+}
+.grid-img {
+  /* background-color: black; */
+  margin: 0.5em;
+  /* border: 5px solid black; */
+  width: 300px;
+  height: auto;
+  justify-self: center;
+  /* align-self: center;  */
+  cursor: pointer;
+  border-radius: 2%;
+}
+.grid-img:hover {
+  animation-name: proj-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
+  /* animation-timing-function: linear; */
+  /* transform: scale(2.5); */
+  /* background-color: #c7c2b5; */
+  /* opacity: 0.2; */
+}
+/* .grid-img:hover .body{
+      background-color: grey;
+      opacity: 0.2;
+  } */
+.projects h2 {
+  margin: 1em;
+  font-size: 36px;
+  color: #ffdb41;
+  /* underline magical */
+}
+.proj-span {
+  border-bottom: 2px solid #ffdb41;
+  border-top: 2px solid #ffdb41;
+  cursor: pointer;
+}
+.proj-span:hover {
+  /* color: white; */
+  animation-name: nav-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background-size: 100% 88%;
+}
+.proj-grid a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animations */
+
+@keyframes proj-hover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
