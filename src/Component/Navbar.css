@@ -1,25 +1,30 @@
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* align-items: center; */
   justify-items: center;
   justify-content: space-around;
   /* margin: 0, 1em, 1em, 1em; */
-  padding: 1em;
+  padding: .25em;
   /* color: #ffdb41; */
 }
 .nav-item {
-  display: inline;
+  /* display: inline; */
   list-style: none;
-  justify-self: center;
+  /* justify-self: center; */
+  align-self: center;
   font-size: 18px;
   /* color: #ffdb41; */
 }
+#first-item{
+  justify-self: start;
+  padding: .25em 0 0 1em;
+}
 
 .signature {
-  position: absolute;
-  left: 50px;
-  top: 20px;
+  /* position: relative; */
+  /* left: 50px;
+  top: 20px; */
   height: 70px;
   width: 100px;
 
@@ -56,3 +61,21 @@
       /* opacity: 0.3; */
     }
   }
+
+
+/* Media Queries */
+@media only screen and (width<= 638px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* grid-template-columns: 1fr; */
+  }
+  #first-item{
+    grid-area: 1/1/2/3;
+    justify-self: center;
+    align-self: center;
+  }
+}

@@ -9,7 +9,7 @@ function Home() {
   return (
     <main className="home-main">
       <h2>
-        <span className="lg">Hi, I'm Ahad Sajjad</span>
+        Hi, I'm <span className="sp">Ahad Sajjad</span>
         <br />
         &emsp;and I am a <span className="sp">Graphic Designer</span>
       </h2>
